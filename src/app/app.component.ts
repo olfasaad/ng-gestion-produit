@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-gestion-produit';
+  actions:Array<any>=
+  [
+    {titre:"Accueil",route:"/acceuil"},
+    {titre:"Liste de produits",route:"/produit"},
+    {titre:"Ajouter de produit",route:"/addProduit"},
+    {titre:"data binding",route:"/databd"},
+  ]
+  actionCourante:any;
+  setActionCourante(a:any)
+  {
+    this.actionCourante=a;
+  }
 }

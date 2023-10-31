@@ -1,0 +1,49 @@
+<div class="container mt-5 ">
+    <h3>L'interpoliation </h3>
+  <p> => on va afficher le nom de user avec </p> <h4>{{name}} </h4> 
+</div>
+<div class="container">
+<p>  => en va afficher la liste qui definit dans Compnnent</p>
+<h3>index n:1 {{nameList[0]}}</h3>
+<h3>index n:2{{nameList[1]}}</h3>
+<h3>index n:3{{nameList[2]}}</h3>
+</div>
+<div>
+    <p>Utilisation de la directive ngFor</p>
+    <li *ngFor="let i of nameList">
+        {{i}}
+    </li>
+</div>
+<div><p>Utilisation de la directive *ngIF</p>
+    <button type="button" [disabled]="stat==false">Button</button>
+    <div *ngIf="stat==false">
+        
+        <li *ngFor="let i of nameList">
+        {{i}}
+        </li>
+    </div>
+
+</div>
+<div>
+    <p>F. Event Binding</p>
+    <button type="button" (click)="afficher()"[disabled]="stat==false">Afficher</button>
+        <div *ngIf="state==false">
+        <h1 >Bienvenue</h1>
+            <ul>
+                <li *ngFor="let i of nameList">
+                    {{i}}
+                </li>
+            </ul>  
+            
+</div>
+</div>
+<div>
+    <button type="button" (click)="cacher()"[disabled]="stat==false">Cacher</button>
+            <div *ngIf="cache==true">
+            <h1 >Bienvenue</h1>
+                <ul>
+                    <li *ngFor="let i of nameList">
+                        {{i}}
+                    </li>
+                </ul>
+</div>

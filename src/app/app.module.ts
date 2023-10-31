@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { ProduitsComponent } from './produits/produits.component';
+import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataBindingComponent,
+    AccueilComponent,
+    ProduitsComponent,
+    AjoutProduitComponent
   ],
   imports: [
     BrowserModule,
