@@ -7,7 +7,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ProduitsComponent } from './produits/produits.component';
 import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,9 @@ import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

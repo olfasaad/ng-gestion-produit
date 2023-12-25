@@ -1,4 +1,4 @@
-<div>
+<div class="container">
    <!-- <nav>
         <button routerLink="/acceuil">Acceuil</button>
         <button routerLink="/addProduit">Liste des produits</button>
@@ -9,7 +9,7 @@
         <table>
             <tr>
                 <td *ngFor="let action of actions">
-                    <button (click)="setActionCourante(action)"[style.backgroundColor]="action==actionCourante?'yellow':'red'" routerLink="{{action.route}}">{{action.titre}}</button>
+                    <button class="btn btn-success"(click)="setActionCourante(action)"[style.backgroundColor]="action==actionCourante?'yellow':'green'" routerLink="{{action.route}}"> <i class="{{action.icon}}"></i> {{action.titre}}</button>
                 </td>
             </tr>
         </table>
